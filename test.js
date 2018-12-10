@@ -36,6 +36,8 @@ function process_data_alternative(materials) {
     return updatedNames;
 }
 
+//new test comment
+
 function process_data_old_fashion(materials) {
     updatedNames = [];
     for (let i=0; i<materials.length; i++) {
