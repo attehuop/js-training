@@ -55,10 +55,11 @@ function process_data_old_fashion(materials) {
 console.log(process_data(materials))
 console.log(process_data_alternative(materials))
 console.log(process_data_old_fashion(materials))
-
+*/
 //End of Villux examples
 //--------------------------------------------------------------------
-*/
+
+/*
 
 // Task: Find a needle and display index
 
@@ -93,5 +94,46 @@ function testNotEqual(val) {
   console.log(testNotEqual(10)
   );
 
-  
+
+  */
+
+// Task: A function that returns golf score depending on Par and Stroke count
+
+ var golfScoreTerm = [
+        "Hole-in-one!", 
+        "Eagle", 
+        "Birdie", 
+        "Par", 
+        "Bogey", 
+        "Double Bogey", 
+        "Go Home!"
+    ];
+
+ function golfScore(par, strokes) {
+    if (strokes == 1) {
+        return golfScoreTerm [0];
+    }
+    else if (strokes <= (par - 2)) {
+        return golfScoreTerm [1]
+    }
+    else if (strokes == (par - 1)) {
+        return golfScoreTerm [2]
+    }
+    else if (strokes == (par)) {
+        return golfScoreTerm [3]
+    }
+    else if (strokes == (par + 1)) {
+        return golfScoreTerm [4]
+    }
+    else if (strokes == (par +2)){
+        return golfScoreTerm [5]
+    }
+    else if (strokes >= par +3 )
+        return golfScoreTerm [6]
+ }
+
+var coursePar = 5;      // Insert ammount of strokes for hole 
+var strokeCount = 4;    // Insert the Par for the course
+
+ console.log(golfScore(coursePar, strokeCount));
 
